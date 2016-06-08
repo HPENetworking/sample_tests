@@ -1,0 +1,11 @@
+{
+    "author": "Hewlett Packard Enterprise Development LP",
+    "email": "hpe-networking@lists.hp.com",
+    "repo_name": "topology_tests",
+    "repo_url": "https://github.com/HPENetworking/topology_tests",
+    "doc_url": "https://github.com/HPENetworking/topology_tests/tree/master/doc",
+    "project_name": "Sample tests for Topology",
+    "short_description": "Sample test cases for Topology users",
+    "year": "2016",
+    "version": "0.1.0"
+}

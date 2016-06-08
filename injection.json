@@ -1,0 +1,19 @@
+[
+    {
+        "files": ["test_bash_config.py"],
+        "modifiers": [
+            {
+                "nodes": ["ops1"],
+                "attributes": {
+                    "image": "topology/ops:latest"
+                }
+            },
+            {
+                "nodes": ["ops2"],
+                "attributes": {
+                    "image": "topology/ops:latest"
+                }
+            }
+        ]
+    }
+]
