@@ -35,9 +35,10 @@ TOPOLOGY = """
 # Nodes
 [type=openswitch name="OpenSwitch 1"] ops1
 [type=openswitch name="OpenSwitch 2"] ops2
+[type=oobmhost name="Host 1"] hs1
+
 # Links
 ops1:port1 -- ops2:port1
-ops1:port2
 """
 
 
@@ -45,8 +46,10 @@ def test_bash_config(topology, step):
 
     ops1 = topology.get('ops1')
     ops2 = topology.get('ops2')
-    assert ops1 is not None
-    assert ops2 is not None
+    hs2 = topology.get('hs1')
+
+    assert hs2 is not None
+
     step('Trying to fetch the ifconfig using bash prompt')
     result = ops1('ifconfig', shell='bash')
     log.debug("IFCONFIG on Switch 1 {}".format(result))
